@@ -51,5 +51,11 @@ section.game_banner .ms_content a {
     border-radius: 1rem;
 }
 
+/* SECTION GAME CARDS */
+section.game_cards .ms_card .img_container {
+    border-radius: 15px;
+    overflow: hidden;
+}
 
+/* SECTION PS5 */
 
