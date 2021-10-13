@@ -1,3 +1,18 @@
+/* GENERAL STYLES */
+body {
+    color: #727272;
+}
+
+/* UTILITIES */
+.ms_button {
+    border-radius: 1rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
 /* HEADER */
 header.ms_header > span {
     font-family: serif;
@@ -48,7 +63,6 @@ section.game_banner .ms_content h2 {
 
 section.game_banner .ms_content a {
     background-color: #cd3d0f;
-    border-radius: 1rem;
 }
 
 /* SECTION GAME CARDS */
@@ -59,3 +73,15 @@ section.game_cards .ms_card .img_container {
 
 /* SECTION PS5 */
 
+section.ps5 h2 {
+    font-size: 2.4rem;
+}
+
+/* COLORS */
+.dodgerblue {
+    color: #117bd1
+}
+
+section.ps5 a {
+    min-width: 170px;
+}
