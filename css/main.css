@@ -18,6 +18,9 @@ ul {
 }
 
 /* HEADER */
+header.ms_header {
+    z-index: 1;
+}
 header.ms_header > span {
     font-family: serif;
 }
@@ -49,7 +52,7 @@ header.ms_header .logo {
 }
 
 /* GAME BANNER */
-section.game_banner {
+section.game_banner.first {
     margin-top: 91px;
     background-image: url('../img/jumbo-bg.png');
     background-size: cover;
@@ -57,7 +60,7 @@ section.game_banner {
     background-position-x: center;
 }
 
-section.game_banner .ms_content {
+section.game_banner.first .ms_content {
     padding-top: 250px;
 }
 
@@ -118,4 +121,11 @@ section.ps5 .ps5_product button:focus{
 /* COLORS */
 .dodgerblue {
     color: #117bd1
+}
+
+section.game_banner.second {
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
 }
