@@ -29,3 +29,27 @@ header.ms_header .logo {
     border-radius: 1rem;
 }
 
+/* GAME BANNER */
+section.game_banner {
+    margin-top: 91px;
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+section.game_banner .ms_content {
+    padding-top: 250px;
+}
+
+section.game_banner .ms_content h2 {
+    font-size: 2.4rem;
+}
+
+section.game_banner .ms_content a {
+    background-color: #cd3d0f;
+    border-radius: 1rem;
+}
+
+
+
