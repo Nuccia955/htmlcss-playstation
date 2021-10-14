@@ -8,6 +8,7 @@ body {
     border-radius: 1rem;
     padding-left: 15px;
     padding-right: 15px;
+    border: 2px solid;
 }
 
 button {
@@ -24,8 +25,8 @@ ul {
 header.ms_header {
     z-index: 1;
 }
-header.ms_header > span {
-    font-family: serif;
+header.ms_header .sony_logo img {
+    width: 100px;
 }
 
 header.ms_header .logo { 
@@ -81,8 +82,64 @@ section.game_cards .ms_card img{
     border-radius: 15px;
 }
 
-section.game_cards .ms_card .img_container:hover {
-    outline: 3px solid #117bd1;
+section.game_cards .ms_card {
+    outline: none;
+    transform: none;
+    transition: transform 0.3s ease-in; 
+}
+
+section.game_cards .ms_card:hover {
+    transform: translateY(-10px);
+}
+
+section.game_cards .ms_card img {
+    transition: box-shadow 0.5s;
+}
+
+section.game_cards .ms_card img:hover {
+    box-shadow: 0 10px 10px rgb(208, 208, 208);
+}
+
+section.game_cards .ms_card:first-of-type .img_container {
+    animation: color_outline 36s ease-in infinite;
+}
+
+section.game_cards .ms_card:nth-of-type(2) .img_container {
+    animation: color_outline 36s ease-in infinite 6s;
+}
+
+section.game_cards .ms_card:nth-of-type(3) .img_container {
+    animation: color_outline 36s ease-in infinite 12s;
+}
+
+section.game_cards .ms_card:nth-of-type(4) .img_container {
+    animation: color_outline 36s ease-in infinite 18s;
+}
+
+section.game_cards .ms_card:nth-of-type(5) .img_container {
+    animation: color_outline 36s ease-in infinite 24s;
+}
+
+section.game_cards .ms_card:last-of-type .img_container {
+    animation: color_outline 36s ease-in infinite 30s;
+}
+
+@keyframes color_outline {
+    0% {
+        outline: none;
+    }
+
+    1% {
+        outline: 3px solid #117bd1
+    }
+
+    25% {
+        outline: none;
+    }
+    
+    100% {
+        outline: none;
+    }
 }
 
 /* SECTION PS5 */
@@ -159,8 +216,58 @@ section.ps_now_banner {
     background-color:#161c3b;
 }
 
+/* FOOTER*/
+footer.ms_footer {
+    background-color: #00439c;
+    font-size: 0.8rem;
+}
+
+footer.ms_footer .logo i.play_logo {
+    font-size: 75px;
+}
+
+footer.ms_footer .logo i span {
+    font-size: 0.6rem;
+}
+
+footer.ms_footer .useful_links a {
+    text-decoration: none;
+}
+
 /* COLORS */
 .dodgerblue {
     color: #117bd1
 }
 
+/* BONUS BUTTONS */
+.ms_button:hover {
+    outline: 2px solid;
+}
+
+header.ms_header .ms_button {
+    outline-color: black;
+    border-color: white;
+}
+
+section.game_banner.first .ms_button,
+section.game_banner.second .ms_button {
+    outline-color: #cd3d0f;
+    border-color: #0d0a0b; 
+}
+
+section.ps5 .ms_button,
+section.ps4 .ms_button {
+    outline-color: #0d6efd;
+    border-color: white;
+}
+
+section.ps_plus_banner .ms_button,
+section.ps_now_banner .ms_button {
+    outline-color: #d9dadc;
+    border-color: #bebcbb;
+}
+
+section.ps_now_banner .ms_button {
+    outline-color: #d9dadc;
+    border-color: #161c3b;
+}
