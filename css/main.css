@@ -144,7 +144,8 @@ section.ps_plus_banner {
     background-color: #bebcbb;
 }
 
-section.ps_plus_banner .text span {
+section.ps_plus_banner .text span,
+section.ps_now_banner .text span {
     font-size: 0.9rem;
 }
 
@@ -153,7 +154,10 @@ section.ps_plus_banner .text a {
     border: none;
 }
 
-
+/* SECTION PS NOW BANNER */
+section.ps_now_banner {
+    background-color:#161c3b;
+}
 
 /* COLORS */
 .dodgerblue {
