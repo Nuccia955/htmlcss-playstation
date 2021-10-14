@@ -6,6 +6,8 @@ body {
 /* UTILITIES */
 .ms_button {
     border-radius: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 button {
@@ -137,6 +139,19 @@ section.new .ms_card span {
     font-size: 0.8rem;
 }
 
+/* PS PLUS BANNER */
+section.ps_plus_banner {
+    background-color: #bebcbb;
+}
+
+section.ps_plus_banner .text span {
+    font-size: 0.9rem;
+}
+
+section.ps_plus_banner .text a {
+    background-color: #d9dadc;
+    border: none;
+}
 
 
 
