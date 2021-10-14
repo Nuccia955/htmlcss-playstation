@@ -15,6 +15,7 @@ button {
 
 ul {
     list-style: none;
+    padding:0
 }
 
 /* HEADER */
@@ -118,14 +119,27 @@ section.ps5 .ps5_product button:focus{
     border-bottom: 2px solid #117bd1;
 }
 
-/* COLORS */
-.dodgerblue {
-    color: #117bd1
-}
-
+/* GAME BANNER 2 */
 section.game_banner.second {
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
     background-size: cover;
     background-position-y: top;
     background-position-x: center;
 }
+
+/* SECTION NUOVE USCITE */
+section.new .ms_card img {
+    border-radius: 15px;
+}
+
+section.new .ms_card span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+
+/* COLORS */
+.dodgerblue {
+    color: #117bd1
+}
+
