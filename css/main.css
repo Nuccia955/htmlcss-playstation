@@ -25,6 +25,7 @@ ul {
 header.ms_header {
     z-index: 1;
 }
+
 header.ms_header .sony_logo img {
     width: 100px;
 }
@@ -32,6 +33,14 @@ header.ms_header .sony_logo img {
 header.ms_header .logo { 
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.ms_navbar .ms_navbar-nav .ms_text.black {
+    color: black;
+}
+
+.ms_navbar .ms_navbar-nav li:hover .ms_text.black{
+    color: #117bd1 ;
 }
 
 .ms_header nav.ms_navbar ul:first-of-type li {
@@ -152,6 +161,16 @@ section.ps5 a {
     min-width: 170px;
 }
 
+section.ps5 .ps5_product .img_container {
+    height: 195px;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.ps5 .ps5_product button{
+    border-bottom: 2px solid transparent;
+}
+
 section.ps5 .ps5_product img {
     opacity: 0.5;
 }
@@ -175,7 +194,7 @@ section.ps5 .ps5_product button:focus span {
 }
 
 section.ps5 .ps5_product button:focus{
-    border-bottom: 2px solid #117bd1;
+    border-color:  #117bd1;
 }
 
 /* GAME BANNER 2 */
@@ -187,6 +206,15 @@ section.game_banner.second {
 }
 
 /* SECTION NUOVE USCITE */
+section.new .ms_card img {
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
+
+section.new .ms_card:hover img {
+    transform: scale(1.03);
+}
+
 section.new .ms_card img {
     border-radius: 15px;
 }
@@ -211,9 +239,35 @@ section.ps_plus_banner .text a {
     border: none;
 }
 
+/* SECTION DISCOUNT */
+section.sales .discount img {    
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(208, 208, 208);    
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+}
+
+section.sales .discount:hover img {
+    transform: scale(1.02);
+}
+
 /* SECTION PS NOW BANNER */
 section.ps_now_banner {
     background-color:#161c3b;
+}
+
+/* SECTION SOCIAL */
+section.social .cover img {
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgb(208, 208, 208);    
+    transform: scale(1);
+    transition: transform 0.2s ease-in, 
+                box-shadow 0.5s ease-in;
+}
+
+section.social .cover:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 5px 8px rgb(208, 208, 208);
 }
 
 /* FOOTER*/
@@ -234,12 +288,17 @@ footer.ms_footer .useful_links a {
     text-decoration: none;
 }
 
+footer.ms_footer .useful_links a:hover {
+    text-decoration: underline;
+}
+
 /* COLORS */
 .dodgerblue {
-    color: #117bd1
+    color: #117bd1;
 }
 
 /* BONUS BUTTONS */
+/* outline offset è più flessibile ma visivamente meno preciso */
 .ms_button:hover {
     outline: 2px solid;
 }
